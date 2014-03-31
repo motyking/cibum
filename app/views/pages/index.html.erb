@@ -1,0 +1,36 @@
+ <div class="index" class="inner cover">
+            <h1 class="cover-heading">La plateforme où partager sa nourriture ;)</h1>
+            <p class="lead">Au lieu de jeter autant en faire profiter quelqu'un!</p>
+            <p class="lead">
+              <a href="/" class="btn btn-lg btn-default">en savoir plus</a>
+            </p>
+          </div>
+          <br><br><br>
+
+      <!-- Three columns of text below the carousel -->
+      <div class="row">
+        <%= link_to(new_user_registration_path) do %>
+        <div class="col-lg-4">
+      <%= image_tag "inscripton.jpg", size:"243x208"  %>
+          <h2>Inscrivez-vous!</h2>
+          <% end %>
+          <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
+          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+        </div><!-- /.col-lg-4 -->
+        <%= link_to(pages_poster_plats_path) do %>
+        <div class="col-lg-4">
+			<%= image_tag "plat.png", size:"243x208"  %>
+		      <h2>Postez votre plats!</h2>
+          <% end %>
+          <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
+          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+        </div><!-- /.col-lg-4 -->
+        <%= link_to(pages_partager_path) do %>
+          <div class="col-lg-4">
+          <%= image_tag "partager.jpeg" %>
+          <h2>Partagez!</h2>
+          <% end %>
+          <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+        </div><!-- /.col-lg-4 -->
+      </div><!-- /.row -->

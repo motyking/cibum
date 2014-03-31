@@ -1,0 +1,24 @@
+
+<div class="entete"> 
+<header class="h">
+  <div class="navbar-inner">
+    <div class="container">
+      <h1><%= link_to "cibum", '/', id: "logo" %></h1>
+      <nav>
+        <ul class="nav pull-right">
+          <li><%= if user_signed_in? then "#{@user.email} est connecté" end%></li>
+          <li><%= link_to "Acceuil",    '/' %></li>
+          <li><%= link_to "communauté", 'pages/communaute' %></li>
+          <li><%= link_to "le concept", 'pages/le_concept' %></li>
+          <li><%= link_to "don",    '/' %></li>
+          <li><%= link_to "se connecter", 'users/sign_in' %></li>
+          <li><%=link_to('Déconnexion', destroy_user_session_path, :method => :delete)%></li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+</header>
+<div class="line-separator"></div>
+</div>
+
+
